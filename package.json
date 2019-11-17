@@ -1,0 +1,25 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "jest": "^24.9.0",
+    "jest-babel": "^1.0.1",
+    "nodemon": "^1.19.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "babel-jest": "^24.9.0",
+    "jest-cli": "^24.9.0"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src --exec babel-node src/index.js",
+    "test": "jest --watchAll"
+  }
+}
